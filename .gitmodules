@@ -1,3 +1,6 @@
 [submodule "salt/roots/formulas/podman-formula"]
 	path = salt/roots/formulas/podman-formula
 	url = https://github.com/extra2000/podman-formula.git
+[submodule "salt/roots/formulas/filebeat-formula"]
+	path = salt/roots/formulas/filebeat-formula
+	url = https://github.com/extra2000/filebeat-formula.git
