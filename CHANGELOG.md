@@ -1,5 +1,22 @@
 # Changelog
 
+### [1.0.1](https://github.com/extra2000/filebeat-box/compare/v1.0.0...v1.0.1) (2021-03-01)
+
+
+### Performance Improvements
+
+* **vagrant:** Reduce vCPUs from 2 to 1 and vRAM from 2GB to 1GB ([dd0e80d](https://github.com/extra2000/filebeat-box/commit/dd0e80d2b01ad810c6e4e96ebc5e2818ceefa014))
+
+
+### Documentations
+
+* **README:** Minor fix in Section `Testing` ([a976f44](https://github.com/extra2000/filebeat-box/commit/a976f44badecd19d078ca8495a940744f1033268))
+
+
+### Fixes
+
+* **filebeat-formula:** Update to [v1.0.1](https://github.com/extra2000/filebeat-formula/releases/tag/v1.0.1) ([1136865](https://github.com/extra2000/filebeat-box/commit/1136865e0815a3265c32b7ed0eb5840286f49766))
+
 ## 1.0.0 (2021-02-23)
 
 
