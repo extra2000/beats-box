@@ -38,7 +38,7 @@ Enter `filebeat-box` and then `filebeat-pod-fb01` container. Try echo `"foo"` to
 ```
 $ vagrant ssh filebeat-box
 $ podman exec -it filebeat-pod-fb01 bash
-$ echo "foo" >> /var/log/hello.log
+$ echo "foo" >> /var/log/filebeat/hello.log
 ```
 
 On `elk-box`, the `"foo"` log message should appear at `elasticsearch-pod` (not `logstash-pod` because Logstash is configured to send logs to Elasticsearch):
