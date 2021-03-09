@@ -9,6 +9,7 @@ install:
   - git submodule update --init --recursive
 build_script:
   - cp -v salt/roots/pillar/filebeat.sls.example salt/roots/pillar/filebeat.sls
+  - cp -v salt/roots/pillar/zabbix-agent.sls.example salt/roots/pillar/zabbix-agent.sls
   - cp -v vagrant/examples/Vagrantfile.filebeat-box.fedora-33.x86_64.example vagrant/Vagrantfile.filebeat-box
   - sudo vagrant up --provider=libvirt filebeat-box
   - sudo vagrant ssh filebeat-box -- sudo salt-call state.highstate

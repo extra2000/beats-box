@@ -12,6 +12,7 @@ Developer box for [filebeat](https://github.com/elastic/beats/tree/master/filebe
 Copy example pillar file for Filebeat. Optionally you may want to edit the values in the `filebeat.sls`:
 ```
 $ cp -v salt/roots/pillar/filebeat.sls.example salt/roots/pillar/filebeat.sls
+$ cp -v salt/roots/pillar/zabbix-agent.sls.example salt/roots/pillar/zabbix-agent.sls
 ```
 
 Copy vagrant file from `vagrant/examples/` and then create the vagrant box (you can change to `--provider=libvirt` if you want to use Libvirt provider):
