@@ -38,8 +38,7 @@ $ vagrant ssh filebeat-box -- sudo salt-call state.sls filebeat.service
 Enter `filebeat-box` and then `filebeat-pod-fb01` container. Try echo `"foo"` to `/var/log/hello.log`:
 ```
 $ vagrant ssh filebeat-box
-$ podman exec -it filebeat-pod-fb01 bash
-$ echo "foo" >> /var/log/filebeat/hello.log
+$ echo "`date` - helloworld, `uuidgen`" | tee --append testlog.txt
 ```
 
 On `elk-box`, the `"foo"` log message should appear at `elasticsearch-pod` (not `logstash-pod` because Logstash is configured to send logs to Elasticsearch):
