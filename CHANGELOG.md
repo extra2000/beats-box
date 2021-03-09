@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.0](https://github.com/extra2000/filebeat-box/compare/v1.0.1...v1.1.0) (2021-03-09)
+
+
+### Features
+
+* **submodule:** Add [zabbix-agent-formula v2.0.0](https://github.com/extra2000/zabbix-agent-formula/releases/tag/v2.0.0) ([74bcf42](https://github.com/extra2000/filebeat-box/commit/74bcf4221e62859264a385d33b994b1f399efe75))
+* **submodule:** Update `filebeat-formula` to [v1.1.1](https://github.com/extra2000/filebeat-formula/releases/tag/v1.1.1) ([7b6ea91](https://github.com/extra2000/filebeat-box/commit/7b6ea91d203131190b6cc2d4946472b9cf1b052b))
+* **testlog:** Add state `testlog` for testing purpose ([5166b65](https://github.com/extra2000/filebeat-box/commit/5166b658def2fc90ac0049c850a8dbd97a02843f))
+
+
+### Documentations
+
+* **README:** Update Section `Testing` to write a dummy text into `testlog.txt` ([78f5ad1](https://github.com/extra2000/filebeat-box/commit/78f5ad17f8ef129baba8577494d17dfa09eae5a1))
+
 ### [1.0.1](https://github.com/extra2000/filebeat-box/compare/v1.0.0...v1.0.1) (2021-03-01)
 
 
