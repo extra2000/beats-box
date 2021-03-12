@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.1.1](https://github.com/extra2000/filebeat-box/compare/v1.1.0...v1.1.1) (2021-03-12)
+
+
+### Fixes
+
+* **/etc/minion:** Enable new `module.run` style ([a679cbd](https://github.com/extra2000/filebeat-box/commit/a679cbde63dcccf554064d013edcb3d46dc6c90d))
+* **pillar/filebeat.sls.example:** Fix missing configurations required for `testlog` demonstrations ([c36e18d](https://github.com/extra2000/filebeat-box/commit/c36e18da1d06eb4db2cc2ef6722b1303439d1d97))
+
 ## [1.1.0](https://github.com/extra2000/filebeat-box/compare/v1.0.1...v1.1.0) (2021-03-09)
 
 
