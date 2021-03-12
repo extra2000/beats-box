@@ -33,3 +33,16 @@ filebeat:
           - type: log
             paths:
               - /var/log/filebeat/*
+          - type: log
+            paths:
+              - /var/log/testlog.txt
+            fields:
+              testlog: true
+      podcfg:
+        volumeMounts:
+          - mountPath: /var/log/testlog.txt
+            name: testlog
+        volumes:
+          - name: testlog
+            hostPath:
+              path: /home/vagrant/testlog.txt
