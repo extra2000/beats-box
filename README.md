@@ -11,6 +11,7 @@ Developer box for [beats](https://github.com/elastic/beats).
 
 Copy example pillar file for Beats. Optionally you may want to edit the values in the `filebeat.sls`:
 ```
+$ cp -v salt/roots/pillar/podman.sls.example salt/roots/pillar/podman.sls
 $ cp -v salt/roots/pillar/filebeat.sls.example salt/roots/pillar/filebeat.sls
 $ cp -v salt/roots/pillar/zabbix-agent.sls.example salt/roots/pillar/zabbix-agent.sls
 ```
