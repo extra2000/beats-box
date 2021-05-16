@@ -10,12 +10,12 @@ install:
 build_script:
   - cp -v salt/roots/pillar/filebeat.sls.example salt/roots/pillar/filebeat.sls
   - cp -v salt/roots/pillar/zabbix-agent.sls.example salt/roots/pillar/zabbix-agent.sls
-  - cp -v vagrant/examples/Vagrantfile.filebeat-box.fedora-33.x86_64.example vagrant/Vagrantfile.filebeat-box
-  - sudo vagrant up --provider=libvirt filebeat-box
-  - sudo vagrant ssh filebeat-box -- sudo salt-call state.highstate
-  - sudo vagrant ssh filebeat-box -- sudo salt-call state.sls filebeat.config
-  - sudo vagrant ssh filebeat-box -- sudo salt-call state.sls filebeat.service
-  - sudo vagrant destroy --force filebeat-box
+  - cp -v vagrant/examples/Vagrantfile.beats-box.fedora-33.x86_64.example vagrant/Vagrantfile.beats-box
+  - sudo vagrant up --provider=libvirt beats-box
+  - sudo vagrant ssh beats-box -- sudo salt-call state.highstate
+  - sudo vagrant ssh beats-box -- sudo salt-call state.sls filebeat.config
+  - sudo vagrant ssh beats-box -- sudo salt-call state.sls filebeat.service
+  - sudo vagrant destroy --force beats-box
 on_success:
   - wget https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh
   - sudo bash install.sh
