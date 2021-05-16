@@ -7,7 +7,7 @@ zabbix_agent:
       name: vagrant
       group: vagrant
     config:
-      hostname: filebeat-box
+      hostname: beats-box
       passive_check:
         accepted_servers: "zabbix-box"
         listen_ip: 0.0.0.0
