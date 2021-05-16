@@ -3,3 +3,4 @@ vagrant/*
 !vagrant/examples
 salt/roots/pillar/filebeat.sls
 salt/roots/pillar/zabbix-agent.sls
+salt/roots/pillar/podman.sls
