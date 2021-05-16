@@ -42,7 +42,8 @@ filebeat:
         volumeMounts:
           - mountPath: /var/log/testlog.txt
             name: testlog
+            readOnly: true
         volumes:
           - name: testlog
-            hostPath:
-              path: /home/vagrant/testlog.txt
+            type: hostPath
+            opt: "path: /home/vagrant/testlog.txt"
