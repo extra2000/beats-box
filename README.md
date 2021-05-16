@@ -27,10 +27,9 @@ Provision the vagrant box:
 $ vagrant ssh beats-box -- sudo salt-call state.highstate
 ```
 
-Deploy ELK Stack Server, Web, Agent, and Postgres containers:
+Deploy Filebeat:
 ```
-$ vagrant ssh beats-box -- sudo salt-call state.sls filebeat.config
-$ vagrant ssh beats-box -- sudo salt-call state.sls filebeat.service
+$ vagrant ssh beats-box -- sudo salt-call state.sls filebeat
 ```
 
 
